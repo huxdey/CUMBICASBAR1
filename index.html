@@ -331,8 +331,8 @@ const CONFIG = {
   // Pedido pelo WhatsApp (sem API: monta a mensagem e abre o wa.me)
   order: {
     enabled: true,
-    whatsapp: "5511984610626",          // número que RECEBE os pedidos (teste)
-    modes: ["mesa","retirada","entrega"], // remova o que o bar não faz
+    whatsapp: "5565992013667",          // número que RECEBE os pedidos (teste)
+    modes: ["retirada"],                 // opções: "mesa", "retirada", "entrega"
     payments: ["Pix","Cartão de crédito","Cartão de débito","Dinheiro"],
     deliveryNote: "Taxa de entrega combinada pelo WhatsApp"
   },
@@ -817,8 +817,8 @@ function renderCart(){
     ${ask?`<div class="sum small"><span>+ ${ask} ${ask>1?"itens":"item"} com preço a consultar</span></div>`:""}
     ${s.mode==="entrega"&&o.deliveryNote?`<div class="sum small"><span>${esc(o.deliveryNote)}</span></div>`:""}
 
-    <span class="lab">Como vai ser?</span>
-    ${o.modes.map(m=>`<label class="opt${s.mode===m?" sel":""}"><input type="radio" name="mode" value="${m}" ${s.mode===m?"checked":""}><span class="l"><span class="r"></span>${MODE_LABEL[m]}</span></label>`).join("")}
+    ${o.modes.length===1?`<div class="warn" style="background:var(--surface);color:var(--ink);border:1.5px solid var(--line)">${s.mode==="retirada"?"Pedido para <b>retirar no balcão</b>. Avisamos pelo WhatsApp quando estiver pronto.":esc(MODE_LABEL[s.mode])}</div>`:`<span class="lab">Como vai ser?</span>`}
+    ${o.modes.length===1?"":o.modes.map(m=>`<label class="opt${s.mode===m?" sel":""}"><input type="radio" name="mode" value="${m}" ${s.mode===m?"checked":""}><span class="l"><span class="r"></span>${MODE_LABEL[m]}</span></label>`).join("")}
 
     <label class="lab" for="oname">Seu nome</label>
     <input id="oname" autocomplete="name" value="${esc(s.name)}" placeholder="Como chamamos você?">
