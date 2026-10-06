@@ -331,7 +331,7 @@ const CONFIG = {
   // Pedido pelo WhatsApp (sem API: monta a mensagem e abre o wa.me)
   order: {
     enabled: true,
-    whatsapp: "5565992013667",          // número que RECEBE os pedidos (teste)
+    whatsapp: "5565992902550",          // número que RECEBE os pedidos
     modes: ["retirada"],                 // opções: "mesa", "retirada", "entrega"
     payments: ["Pix","Cartão de crédito","Cartão de débito","Dinheiro"],
     deliveryNote: "Taxa de entrega combinada pelo WhatsApp"
@@ -661,6 +661,7 @@ function render(){
     <nav class="nav" aria-label="Seções"><div class="wrap">${CONFIG.sections.filter(s=>navMap[s] && (s!=="agenda"||upcoming(15).length)).map(s=>`<a href="#${s}">${navMap[s]}</a>`).join("")}</div></nav>
     <main class="wrap">${CONFIG.sections.map(s=>B[s]?B[s]():"").join("")}</main>
     <footer><div class="lights" aria-hidden="true"></div><div class="wrap"><div class="sm">${esc(CONFIG.name)}</div><div><a href="tel:+${CONFIG.whatsapp}" style="color:#fff">${esc(CONFIG.phone)}</a></div>
+      <div style="margin-top:4px"><a href="${mapsUrl()}" target="_blank" rel="noopener" style="color:#fff;text-decoration:none;opacity:.92">${esc(CONFIG.address)}</a></div>
       <div class="row">${CONFIG.instagram?`<a class="btn" href="https://instagram.com/${CONFIG.instagram}" target="_blank" rel="noopener">${I.ig}@${esc(CONFIG.instagram)}</a>`:""}<button class="btn" id="copy">Copiar link</button><button class="btn" id="shr">${I.share}Compartilhar</button></div></div></footer>`;
   bind();
   bindOrder();
