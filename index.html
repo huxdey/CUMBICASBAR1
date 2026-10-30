@@ -362,77 +362,84 @@ const CONFIG = {
   // n = número do item no cardápio físico | price:null = "Consultar"
   menu: [
     { id:"porcoes", name:"Petiscos e porções", display:"grid", items:[
-      { n:2, img:"img/item-02.jpg", name:"Peixe frito", desc:"Peixe empanado e frito, com molho tártaro", prices:[{l:"Pequena",v:54.5},{l:"Grande",v:63.5}] },
-      { n:3, img:"img/item-03.jpg", name:"Contra filé acebolado", desc:"Contra filé na chapa com cebola", prices:[{l:"Pequena",v:50.5},{l:"Grande",v:60.5}] },
-      { n:4, img:"img/item-04.jpg", name:"Contra filé com queijo na chapa", desc:"Contra filé na chapa coberto com queijo derretido", prices:[{l:"Pequena",v:56.5},{l:"Grande",v:64.5}] },
-      { n:5, img:"img/item-05.jpg", name:"Frango a passarinho", desc:"Pedaços de frango temperados e fritos", prices:[{l:"Pequena",v:40.5},{l:"Grande",v:45.5}] },
-      { n:6, img:"img/item-06.jpg", name:"Calabresa", desc:"Calabresa fatiada na chapa com cebola", prices:[{l:"Pequena",v:40.5},{l:"Grande",v:45.5}] },
-      { n:7, img:"img/item-07.jpg", name:"Batata frita", desc:"Porção de batata frita crocante", prices:[{l:"Pequena",v:29.5},{l:"Grande",v:35.5}] },
-      { n:8, img:"img/item-08.jpg", name:"Batata, bacon e queijo", desc:"Batata frita coberta com queijo derretido e bacon", price:48.50 }
+      { n:2, img:"img/item-02.jpg", name:"Peixe frito", desc:"Peixe empanado e frito, com molho tártaro", prices:[{l:"Pequena",v:58.0},{l:"Grande",v:67.0}] },
+      { n:3, img:"img/item-03.jpg", name:"Contra filé acebolado", desc:"Contra filé na chapa com cebola", prices:[{l:"Pequena",v:54.0},{l:"Grande",v:64.0}] },
+      { n:4, img:"img/item-04.jpg", name:"Contra filé com queijo na chapa", desc:"Contra filé na chapa coberto com queijo derretido", prices:[{l:"Pequena",v:60.5},{l:"Grande",v:68.0}] },
+      { n:5, img:"img/item-05.jpg", name:"Frango a passarinho", desc:"Pedaços de frango temperados e fritos", prices:[{l:"Pequena",v:44.0},{l:"Grande",v:49.0}] },
+      { n:6, img:"img/item-06.jpg", name:"Calabresa", desc:"Calabresa fatiada na chapa com cebola", prices:[{l:"Pequena",v:43.0},{l:"Grande",v:49.0}] },
+      { n:7, img:"img/item-07.jpg", name:"Batata frita", desc:"Porção de batata frita crocante", prices:[{l:"Pequena",v:33.0},{l:"Grande",v:39.0}] },
+      { n:8, img:"img/item-08.jpg", name:"Batata, bacon e queijo", desc:"Batata frita coberta com queijo derretido e bacon", price:52.00 }
     ]},
     { id:"combos", name:"Combos de porção", display:"list", note:"Duas porções no mesmo prato", items:[
-      { n:9,  img:"img/item-09.jpg", name:"Batata e frango", desc:"Batata frita + frango a passarinho", price:53.50 },
-      { n:10, img:"img/item-10.jpg", name:"Batata e calabresa", desc:"Batata frita + calabresa com cebola", price:51.50 },
-      { n:11, img:"img/item-11.jpg", name:"Batata e contra filé", desc:"Batata frita + contra filé acebolado", price:57.50 },
-      { n:12, img:"img/item-12.jpg", name:"Calabresa e contra filé", desc:"Calabresa + contra filé acebolado", price:58.50 },
-      { n:13, img:"img/item-13.jpg", name:"Frango e contra filé", desc:"Frango a passarinho + contra filé acebolado", price:61.50 }
+      { n:9,  img:"img/item-09.jpg", name:"Batata e frango", desc:"Batata frita + frango a passarinho", price:57.00 },
+      { n:10, img:"img/item-10.jpg", name:"Batata e calabresa", desc:"Batata frita + calabresa com cebola", price:55.00 },
+      { n:11, img:"img/item-11.jpg", name:"Batata e contra filé", desc:"Batata frita + contra filé acebolado", price:61.00 },
+      { n:12, img:"img/item-12.jpg", name:"Calabresa e contra filé", desc:"Calabresa + contra filé acebolado", price:62.00 },
+      { n:13, img:"img/item-13.jpg", name:"Frango e contra filé", desc:"Frango a passarinho + contra filé acebolado", price:65.00 }
     ]},
     { id:"jantinha", name:"Jantinha", display:"list", note:"Pratos executivos, bem servidos", items:[
-      { n:18, img:"img/item-18.jpg", name:"Contra filé com queijo", desc:"Acompanha arroz, feijão, salada e batata frita", price:29.00 },
-      { n:19, img:"img/item-19.jpg", name:"Contra filé", desc:"Acompanha arroz, feijão, salada e batata frita", price:27.00 },
-      { n:20, img:"img/item-20.jpg", name:"Peixe frito", desc:"Acompanha arroz, feijão, salada e batata frita", price:28.00 },
-      { n:21, img:"img/item-21.jpg", name:"Frango frito", desc:"Acompanha arroz, feijão, salada e batata frita", price:27.00 },
+      { n:18, img:"img/item-18.jpg", name:"Contra filé com queijo", desc:"Acompanha arroz, feijão, salada e batata frita", price:30.00 },
+      { n:19, img:"img/item-19.jpg", name:"Contra filé", desc:"Acompanha arroz, feijão, salada e batata frita", price:28.50 },
+      { n:20, img:"img/item-20.jpg", name:"Peixe frito", desc:"Acompanha arroz, feijão, salada e batata frita", price:30.00 },
+      { n:21, img:"img/item-21.jpg", name:"Frango frito", desc:"Acompanha arroz, feijão, salada e batata frita", price:28.00 },
       { n:22, img:"img/item-22.jpg", name:"Filé de frango com queijo", desc:"Acompanha arroz, feijão, salada e batata frita", price:29.00 }
     ]},
     { id:"caldos", name:"Caldos Cumbuca", display:"list", note:"Servidos quentinhos na cumbuca", items:[
-      { n:23, img:"img/item-23.jpg", name:"Mocotó", desc:"Caldo de mocotó temperado com cheiro-verde", prices:[{l:"Pequena",v:13.5},{l:"Grande",v:21.5}] },
-      { n:24, img:"img/item-24.jpg", name:"Frango", desc:"Frango desfiado com legumes", prices:[{l:"Pequena",v:13.5},{l:"Grande",v:21.5}] },
-      { n:25, img:"img/item-25.jpg", name:"Feijão", desc:"Caldo de feijão com bacon e cheiro-verde", prices:[{l:"Pequena",v:13.5},{l:"Grande",v:21.5}] },
-      { n:26, img:"img/item-26.jpg", name:"Misto", desc:"Mistura dos caldos da casa", price:22.50 },
+      { n:23, img:"img/item-23.jpg", name:"Mocotó", desc:"Caldo de mocotó temperado com cheiro-verde", prices:[{l:"Pequena",v:13.5},{l:"Grande",v:22.0}] },
+      { n:24, img:"img/item-24.jpg", name:"Frango", desc:"Frango desfiado com legumes", prices:[{l:"Pequena",v:13.5},{l:"Grande",v:22.0}] },
+      { n:25, img:"img/item-25.jpg", name:"Feijão", desc:"Caldo de feijão com bacon e cheiro-verde", prices:[{l:"Pequena",v:13.5},{l:"Grande",v:22.0}] },
+      { n:26, img:"img/item-26.jpg", name:"Misto", desc:"Mistura dos caldos da casa", price:23.00 },
       { n:27, icon:"cup", name:"Caldo no copo", desc:"Porção individual, servida no copo", price:9.50 },
-      { n:28, icon:"plus", name:"Adicional de queijo", desc:"Queijo para acrescentar no caldo", price:6.00 }
+      { n:28, icon:"plus", name:"Adicional de queijo", desc:"Queijo para acrescentar no caldo", price:6.50 }
     ]},
     { id:"lanches", name:"Lanches", display:"list", items:[
-      { n:29, img:"img/item-29.jpg", name:"X-Bagunça", desc:"Duplo hambúrguer, calabresa, bacon, salsicha, presunto, queijo, 2 ovos, maionese e salada", price:30.00 },
-      { n:30, img:"img/item-30.jpg", name:"X-Bacon", desc:"Hambúrguer, bacon, presunto, queijo, maionese e salada", price:26.00 },
-      { n:31, img:"img/item-31.jpg", name:"X-Salada", desc:"Hambúrguer, presunto, queijo, maionese e salada", price:15.50 },
-      { n:32, img:"img/item-32.jpg", name:"X-Egg", desc:"Hambúrguer, ovo, presunto, queijo, maionese e salada", price:15.50 },
-      { n:33, img:"img/item-33.jpg", name:"X-Burguer", desc:"Hambúrguer, presunto, queijo e maionese", price:15.50 },
-      { n:34, img:"img/item-34.jpg", name:"Baguncinha", desc:"Hambúrguer, calabresa, bacon, salsicha, presunto, queijo, ovo, maionese e salada", price:22.00 },
-      { n:35, img:"img/item-35.jpg", name:"Bauru", desc:"Pão de hambúrguer, presunto, queijo, maionese e salada", price:13.00 },
-      { n:36, img:"img/item-36.jpg", name:"Cachorro-quente prensado", desc:"Salsicha, presunto, queijo e batata frita", price:16.00 },
-      { n:37, img:"img/item-37.jpg", name:"X-Frango", desc:"Filé de frango, presunto, queijo e salada", price:25.00 }
+      { n:29, img:"img/item-29.jpg", name:"X-Bagunça", desc:"Duplo hambúrguer, calabresa, bacon, salsicha, presunto, queijo, 2 ovos, maionese e salada", price:31.50 },
+      { n:30, img:"img/item-30.jpg", name:"X-Bacon", desc:"Hambúrguer, bacon, presunto, queijo, maionese e salada", price:27.50 },
+      { n:31, img:"img/item-31.jpg", name:"X-Salada", desc:"Hambúrguer, presunto, queijo, maionese e salada", price:17.00 },
+      { n:32, img:"img/item-32.jpg", name:"X-Egg", desc:"Hambúrguer, ovo, presunto, queijo, maionese e salada", price:17.00 },
+      { n:33, img:"img/item-33.jpg", name:"X-Burguer", desc:"Hambúrguer, presunto, queijo e maionese", price:17.00 },
+      { n:34, img:"img/item-34.jpg", name:"Baguncinha", desc:"Hambúrguer, calabresa, bacon, salsicha, presunto, queijo, ovo, maionese e salada", price:23.50 },
+      { n:35, img:"img/item-35.jpg", name:"Bauru", desc:"Pão de hambúrguer, presunto, queijo, maionese e salada", price:14.50 },
+      { n:36, img:"img/item-36.jpg", name:"Cachorro-quente prensado", desc:"Salsicha, presunto, queijo e batata frita", price:17.50 },
+      { n:37, img:"img/item-37.jpg", name:"X-Frango", desc:"Filé de frango, presunto, queijo e salada", price:26.50 }
     ]},
     { id:"cervejas", name:"Cervejas", display:"list", note:"Sempre trincando", items:[
-      { n:47, img:"img/item-47.jpg", name:"Corona", desc:"Long neck", price:18.50 },
+      { n:47, img:"img/item-47.jpg", name:"Corona", desc:"Long neck", price:20.00 },
       { n:48, img:"img/item-48.jpg", name:"Original", desc:"Garrafa 600ml", price:16.50 },
-      { n:49, img:"img/item-49.jpg", name:"Stella Artois", desc:"Long neck", price:16.50 },
-      { n:50, img:"img/item-50.jpg", name:"Budweiser", desc:"Long neck", price:14.50 },
-      { n:51, img:"img/item-51.jpg", name:"Brahma", desc:"Garrafa 600ml", price:13.75 },
-      { n:52, img:"img/item-52.jpg", name:"Skol", desc:"Garrafa 600ml", price:13.75 },
-      { n:53, img:"img/item-53.jpg", name:"Antarctica", desc:"Garrafa 600ml", price:null },
-      { n:54, img:"img/item-54.jpg", name:"Cerveja lata", desc:"Lata 350ml", price:null },
-      { n:46, img:"img/item-46.jpg", name:"Cerveja zero", desc:"Zero álcool, lata 350ml", price:11.00 }
+      { n:49, img:"img/item-49.jpg", name:"Stella Artois", desc:"Long neck", price:17.00 },
+      { n:50, img:"img/item-50.jpg", name:"Budweiser", desc:"Long neck", price:15.00 },
+      { n:51, img:"img/item-51.jpg", name:"Brahma", desc:"Garrafa 600ml", price:14.00 },
+      { n:52, img:"img/item-52.jpg", name:"Skol", desc:"Garrafa 600ml", price:14.00 },
+      { n:53, icon:"bottle", name:"Stella Gold", desc:"Long neck", price:20.00 },
+      { n:54, img:"img/item-54.jpg", name:"Antarctica", desc:"Garrafa 600ml", price:14.00 },
+      { n:55, img:"img/item-55.jpg", name:"Cerveja lata", desc:"Lata 350ml", price:6.00 },
+      { n:46, img:"img/item-46.jpg", name:"Cerveja zero", desc:"Zero álcool, lata 350ml", price:12.00 }
     ]},
     { id:"doses", name:"Drinks e doses", display:"list", items:[
-      { n:55, img:"img/item-55.jpg", name:"Cozumel", desc:"Servido na taça, com limão", price:null },
-      { n:56, img:"img/item-56.jpg", name:"Cool Burro", desc:"Dose", price:null }
+      { n:56, img:"img/item-56.jpg", name:"Cozumel", desc:"Servido na taça, com limão", price:5.00 },
+      { n:57, img:"img/item-57.jpg", name:"Cool Burro", desc:"Dose", price:5.00 },
+      { n:58, icon:"shot", name:"Campari", desc:"Dose", price:19.00 },
+      { n:59, icon:"shot", name:"Dose de pinga", desc:"Dose", price:5.00 },
+      { n:60, img:"img/item-60.jpg", name:"Caipirinha", desc:"Cachaça, limão, açúcar e gelo", price:17.00 },
+      { n:61, img:"img/item-60.jpg", name:"Caipiroska", desc:"Vodka, limão, açúcar e gelo", price:19.00 },
+      { n:62, icon:"shot", name:"Whisky Red Label", desc:"Dose", price:22.00 },
+      { n:63, icon:"shot", name:"Whisky Buchanan's", desc:"Dose", price:25.00 }
     ]},
     { id:"sem-alcool", name:"Sem álcool", display:"list", items:[
-      { n:40, img:"img/item-40.jpg", name:"Refrigerante lata", desc:"Lata 350ml", price:6.50 },
-      { n:38, img:"img/item-38.jpg", name:"Refrigerante 1 litro", desc:"Garrafa de 1 litro", price:10.00 },
+      { n:40, img:"img/item-40.jpg", name:"Refrigerante lata", desc:"Lata 350ml", price:7.00 },
+      { n:38, img:"img/item-38.jpg", name:"Refrigerante 1 litro", desc:"Garrafa de 1 litro", price:12.00 },
       { n:39, img:"img/item-39.jpg", name:"Refrigerante 1,5 litro", desc:"Garrafa de 1,5 litro", price:14.00 },
-      { n:41, img:"img/item-41.jpg", name:"Água sem gás", desc:"Garrafa 500ml", price:4.50 },
-      { n:42, img:"img/item-42.jpg", name:"Água com gás", desc:"Garrafa 500ml", price:5.00 },
-      { n:43, img:"img/item-43.jpg", name:"Energético", desc:"Lata", price:14.50 },
-      { n:44, img:"img/item-44.jpg", name:"Água tônica", desc:"Lata 350ml", price:7.50 },
-      { n:45, img:"img/item-45.jpg", name:"Aquarius", desc:"Lata", price:8.00 }
+      { n:41, img:"img/item-41.jpg", name:"Água sem gás", desc:"Garrafa 500ml", price:5.00 },
+      { n:42, img:"img/item-42.jpg", name:"Água com gás", desc:"Garrafa 500ml", price:6.00 },
+      { n:43, img:"img/item-43.jpg", name:"Energético", desc:"Lata", price:16.00 },
+      { n:44, img:"img/item-44.jpg", name:"Água tônica", desc:"Lata 350ml", price:8.00 },
+      { n:45, img:"img/item-45.jpg", name:"Aquarius", desc:"Lata", price:9.00 }
     ]},
     { id:"guarnicoes", name:"Guarnições e adicionais", display:"list", items:[
-      { n:14, img:"img/item-14.jpg", name:"Arroz ou feijão", desc:"Porção de arroz branco ou feijão", price:8.50 },
-      { n:15, img:"img/item-15.jpg", name:"Vinagrete", desc:"Tomate, cebola e pimentão picadinhos", price:10.50 },
-      { n:16, img:"img/item-16.jpg", name:"Salada", desc:"Alface, tomate, cebola e cenoura", price:11.50 },
-      { n:17, icon:"plus", name:"Adicional de queijo ou bacon", desc:"Para turbinar qualquer porção", price:8.50 }
+      { n:14, img:"img/item-14.jpg", name:"Arroz ou feijão", desc:"Porção de arroz branco ou feijão", price:12.00 },
+      { n:15, img:"img/item-15.jpg", name:"Vinagrete", desc:"Tomate, cebola e pimentão picadinhos", price:14.00 },
+      { n:16, img:"img/item-16.jpg", name:"Salada", desc:"Alface, tomate, cebola e cenoura", price:15.00 },
+      { n:17, icon:"plus", name:"Adicional de queijo ou bacon", desc:"Para turbinar qualquer porção", price:12.50 }
     ]}
   ],
 
@@ -537,6 +544,7 @@ const addBtn = it => canOrder(it) ? `<button class="add" type="button" data-add=
 const ICONS = {
   plus:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg>',
   cup:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M6 8h12l-1.3 11.2a2 2 0 0 1-2 1.8H9.3a2 2 0 0 1-2-1.8z"/><path d="M9 4.5c0 1 1 1.3 1 2.3M13 3.5c0 1 1 1.3 1 2.3"/></svg>',
+  bottle:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M10 2.5h4v4l1.5 3V20a1.5 1.5 0 0 1-1.5 1.5h-4A1.5 1.5 0 0 1 8.5 20V9.5l1.5-3z"/><path d="M8.5 12.5h7"/></svg>',
   shot:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M7 4h10l-1.5 16h-7z"/><path d="M7.6 10h8.8"/></svg>',
   plate:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="13" r="7"/><circle cx="12" cy="13" r="3.5"/></svg>'
 };
@@ -720,7 +728,7 @@ function bind(){
    ========================================================= */
 const ITEMS = {};
 CONFIG.menu.forEach(c=>c.items.forEach((it,i)=>{ it._id = c.id+"-"+(it.n??i); it._cat=c.id; ITEMS[it._id]=it; }));
-const CART_KEY = "pedido-"+CONFIG.slug;
+const CART_KEY = "pedido-v2-"+CONFIG.slug;
 let cart = [];
 try{ cart = JSON.parse(localStorage.getItem(CART_KEY)||"[]").filter(l=>ITEMS[l.id]); }catch(e){ cart=[]; }
 const saveCart = ()=>{ try{ localStorage.setItem(CART_KEY, JSON.stringify(cart)); }catch(e){} };
