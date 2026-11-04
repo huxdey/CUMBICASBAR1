@@ -389,8 +389,8 @@ const CONFIG = {
       { n:24, img:"img/item-24.jpg", name:"Frango", desc:"Frango desfiado com legumes", prices:[{l:"Pequena",v:13.5},{l:"Grande",v:22.0}] },
       { n:25, img:"img/item-25.jpg", name:"Feijão", desc:"Caldo de feijão com bacon e cheiro-verde", prices:[{l:"Pequena",v:13.5},{l:"Grande",v:22.0}] },
       { n:26, img:"img/item-26.jpg", name:"Misto", desc:"Mistura dos caldos da casa", price:23.00 },
-      { n:27, icon:"cup", name:"Caldo no copo", desc:"Porção individual, servida no copo", price:9.50 },
-      { n:28, icon:"plus", name:"Adicional de queijo", desc:"Queijo para acrescentar no caldo", price:6.50 }
+      { n:27, img:"img/item-27.jpg", name:"Caldo no copo", desc:"Porção individual, servida no copo", price:9.50 },
+      { n:28, img:"img/item-28.jpg", name:"Adicional de queijo", desc:"Queijo para acrescentar no caldo", price:6.50 }
     ]},
     { id:"lanches", name:"Lanches", display:"list", items:[
       { n:29, img:"img/item-29.jpg", name:"X-Bagunça", desc:"Duplo hambúrguer, calabresa, bacon, salsicha, presunto, queijo, 2 ovos, maionese e salada", price:31.50 },
@@ -827,7 +827,7 @@ function renderCart(){
     ${ask?`<div class="sum small"><span>+ ${ask} ${ask>1?"itens":"item"} com preço a consultar</span></div>`:""}
     ${s.mode==="entrega"&&o.deliveryNote?`<div class="sum small"><span>${esc(o.deliveryNote)}</span></div>`:""}
 
-    ${o.modes.length===1?`<div class="warn" style="background:var(--surface);color:var(--ink);border:1.5px solid var(--line)">${s.mode==="retirada"?"Pedido para <b>retirar no balcão</b>. Avisamos pelo WhatsApp quando estiver pronto.":esc(MODE_LABEL[s.mode])}</div>`:`<span class="lab">Como vai ser?</span>`}
+    ${o.modes.length===1?"":`<span class="lab">Como vai ser?</span>`}
     ${o.modes.length===1?"":o.modes.map(m=>`<label class="opt${s.mode===m?" sel":""}"><input type="radio" name="mode" value="${m}" ${s.mode===m?"checked":""}><span class="l"><span class="r"></span>${MODE_LABEL[m]}</span></label>`).join("")}
 
     <label class="lab" for="oname">Seu nome</label>
